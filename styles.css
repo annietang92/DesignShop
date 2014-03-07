@@ -1,0 +1,7 @@
+#chalkboard{
+	background-image:url('../images/bg-grid.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	height: 800px;
+	border: 1px solid black;
+}

@@ -1,0 +1,167 @@
+html, body{
+	width:100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background-color: #e4e2e2 !important;
+	font-family: "Titillium Web", sans-serif;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+h1{
+	font-family: 'Yellowtail', cursive !important;
+} 
+
+h1.larger, h1>.larger{
+	font-size: 50px !important;
+}
+
+.text-white{
+	color:white;
+}
+
+.offset-top{
+	padding-top: 80px;
+}
+
+.col-centered{
+	float:none !important;
+    margin: 0 auto;
+}
+
+#chalkboard{
+	padding-top: 100px;
+	background-image:url('../images/bg-nogrid.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	position: fixed;
+	top:0;
+	height:700px;
+	width:100%;
+}
+
+#chalkboard_content{
+	height:400px;
+}
+
+#pencil_container{
+	height:450px;
+}
+#pencils{
+	width:260px;
+	height:100%;
+	margin:0 auto;
+}
+
+.pencil{
+	height:100%;
+	padding-top:50px;
+	-webkit-transition: padding-top .4s ease-in-out;
+       -moz-transition: padding-top .4s ease-in-out;
+         -o-transition: padding-top .4s ease-in-out;
+            transition: padding-top .4s ease-in-out;
+}
+.pencil:hover{
+	padding-top:0;
+	cursor: pointer;
+}
+
+nav{
+	height:80px;
+	background-color: #eee;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#nav_text{
+	padding-top: 11px;
+}
+
+#nav_text.ease{
+	-webkit-transition: padding-top .3s ease-in-out;
+       -moz-transition: padding-top .3s ease-in-out;
+         -o-transition: padding-top .3s ease-in-out;
+            transition: padding-top .3s ease-in-out;
+}
+
+.circle {
+    height: 10em;
+    margin-top:-300px;
+    /*left/right position, top/bottom position, shape, color, size, bg color, size*/
+    background-image: radial-gradient(circle 225px at 49.6% -80%, transparent 225px, #e4e2e2 225px);
+    background-image: -webkit-radial-gradient(49.7% -80%, circle, transparent 225px, #e4e2e2 225px);
+}
+
+.fixed{
+	position: fixed;
+}
+
+#main{
+	height:800px;
+	background-color: #e4e2e2;
+}
+h4.larger{
+	font-size:24px;
+	line-height: 2em;
+}
+
+.smaller-logo{
+	width:50px;
+	padding:10px;
+}
+
+.larger-logo{
+	width:80px;
+	padding:15px;
+}
+
+#logo_img.ease{
+	-webkit-transition: width .4s, padding .4s ease-in-out;
+       -moz-transition: width .4s, padding .4s ease-in-out;
+         -o-transition: width .4s, padding .4s ease-in-out;
+            transition: width .4s, padding .4s ease-in-out;
+}
+
+#logo_text.ease{
+	-webkit-transition: font-size .4s ease-in-out;
+       -moz-transition: font-size .4s ease-in-out;
+         -o-transition: font-size .4s ease-in-out;
+            transition: font-size .4s ease-in-out;
+}
+
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+}
+
+.font-semibold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+
+.border{
+	border: 1px solid black;
+}
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
+}
+
+.height-full{
+	height:1000px;
+}
+
+.full-width{
+	width:100% !important;
+}
+
+.md-padding{
+	padding:30px;
+}
+
+.lg-padding{
+	padding:50px;
+}
