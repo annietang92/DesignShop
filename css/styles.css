@@ -53,7 +53,7 @@ h1.larger, h1>.larger{
 	pointer-events:none;
 
 }
-.slide>img{
+.slide>a>img{
 	max-height: 300px;
 	margin: 0 auto;
 }
