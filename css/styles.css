@@ -154,7 +154,21 @@ h4.larger{
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 600;
 }
+.video{
+	width:560px;
+	float: left
+}
 
+.half-spacing{
+	line-height: 1.5em;
+}
+
+.video-right{
+	float: left;
+	width: -moz-calc(100% - 570px);
+    width: -webkit-calc(100% - 570px);
+    width: calc(100% - 570px);
+}
 .border{
 	border: 1px solid black;
 }
