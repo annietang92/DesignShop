@@ -1,11 +1,22 @@
 $(function(){
-    $('#header_nav').data('size','big');
+  $('#header_nav').data('size','big');
+
+  $(".pencil").mouseover(function() {
+    $(".pencil").addClass("hovering");
+  })
+  $(".pencil").mouseout(function() {
+    $(".pencil").removeClass("hovering");
+  })
 
   $( "#pencil-1" ).click(function() {
     $("#slide-1").removeClass("hide");
     $("#slide-2").addClass("hide");
     $("#slide-3").addClass("hide");
     $("#slide-4").addClass("hide");
+    $("#pencil-1").addClass("active");
+    $("#pencil-2").removeClass("active");
+    $("#pencil-3").removeClass("active");
+    $("#pencil-4").removeClass("active");
   });
 
   $( "#pencil-2" ).click(function() {
@@ -13,6 +24,10 @@ $(function(){
     $("#slide-2").removeClass("hide");
     $("#slide-3").addClass("hide");
     $("#slide-4").addClass("hide");
+    $("#pencil-2").addClass("active");
+    $("#pencil-1").removeClass("active");
+    $("#pencil-3").removeClass("active");
+    $("#pencil-4").removeClass("active");
   });
 
   $( "#pencil-3" ).click(function() {
@@ -20,6 +35,10 @@ $(function(){
     $("#slide-2").addClass("hide");
     $("#slide-3").removeClass("hide");
     $("#slide-4").addClass("hide");
+    $("#pencil-3").addClass("active");
+    $("#pencil-2").removeClass("active");
+    $("#pencil-1").removeClass("active");
+    $("#pencil-4").removeClass("active");
   });
 
   $( "#pencil-4" ).click(function() {
@@ -27,6 +46,10 @@ $(function(){
     $("#slide-2").addClass("hide");
     $("#slide-3").addClass("hide");
     $("#slide-4").removeClass("hide");
+    $("#pencil-4").addClass("active");
+    $("#pencil-2").removeClass("active");
+    $("#pencil-3").removeClass("active");
+    $("#pencil-1").removeClass("active");
   });
 
 });
@@ -66,10 +89,10 @@ $(window).scroll(function(){
     }
     if($(window).scrollTop() > 150)
     {
-        $('#chalkboard_content').stop().animate({opacity:'0.3'},50);
+        $('.chalkboard_content').stop().animate({opacity:'0.3'},50);
     }
     else
     {
-        $('#chalkboard_content').stop().animate({opacity:'1.0'},50);
+        $('.chalkboard_content').stop().animate({opacity:'1.0'},50);
     }
 });

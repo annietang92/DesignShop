@@ -1,4 +1,5 @@
 html, body{
+	min-width: 1000px;
 	width:100%;
 	height: 100%;
 	margin: 0;
@@ -44,8 +45,17 @@ h1.larger, h1>.larger{
 	width:100%;
 }
 
-#chalkboard_content{
-	height:400px;
+.chalkboard_content{
+	height:420px;
+}
+.chalkboard_pushdown{
+	height:420px;
+	pointer-events:none;
+
+}
+.slide>img{
+	max-height: 300px;
+	margin: 0 auto;
 }
 
 #pencil_container{
@@ -66,10 +76,12 @@ h1.larger, h1>.larger{
             transition: padding-top .4s ease-in-out;
 }
 .pencil:hover{
-	padding-top:0;
+	padding-top:40px;
 	cursor: pointer;
 }
-
+#pencils>.active:not(.hovering){
+	padding-top: 40px !important;
+}
 nav{
 	height:80px;
 	background-color: #eee;
