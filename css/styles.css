@@ -113,12 +113,16 @@ nav{
 }
 
 #main{
-	height:800px;
 	background-color: #e4e2e2;
 }
 h4.larger{
 	font-size:24px;
 	line-height: 2em;
+}
+
+.bg-success {
+  background-color: #92cf5c;
+  color: #fbfdfa;
 }
 
 .smaller-logo{
@@ -191,4 +195,15 @@ h4.larger{
 
 .lg-padding{
 	padding:50px;
+}
+
+.md-padding-bottom{
+	padding-bottom:30px;
+}
+.lg-padding-bottom{
+	padding-bottom:50px;
+}
+
+.xlg-padding-bottom{
+	padding-bottom:130px;
 }
