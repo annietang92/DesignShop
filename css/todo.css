@@ -609,7 +609,6 @@ a:hover .caret-white {
 .header,
 .footer {
   min-height: 50px;
-  padding: 0 15px;
 }
 .header > p,
 .footer > p {
