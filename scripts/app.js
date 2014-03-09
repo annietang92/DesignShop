@@ -1,11 +1,33 @@
 $(function(){
 
+
   setTimeout( function() {
-    $( '#pencil-2' ).trigger( 'click' ) ;
-    $( '#pencil-3' ).trigger( 'click' ).delay(3000);
-    $( '#pencil-4' ).trigger( 'click' ).delay(6000);
-    $( '#pencil-1' ).trigger( 'click' ).delay(9000);
-    }, 12000 );
+    $( '#pencil-2' ).trigger( 'click' );
+    }, 5000 );
+  setTimeout( function() {
+    $( '#pencil-3' ).trigger( 'click' );
+    }, 10000 );
+  setTimeout( function() {
+    $( '#pencil-4' ).trigger( 'click' );
+    }, 15000 );
+  setTimeout( function() {
+    $( '#pencil-1' ).trigger( 'click' );
+    }, 20000 );
+
+  setInterval( function() {
+      setTimeout( function() {
+        $( '#pencil-2' ).trigger( 'click' );
+    }, 5000 );
+      setTimeout( function() {
+        $( '#pencil-3' ).trigger( 'click' );
+    }, 10000 );
+      setTimeout( function() {
+        $( '#pencil-4' ).trigger( 'click' );
+    }, 15000 );
+      setTimeout( function() {
+        $( '#pencil-1' ).trigger( 'click' );
+    }, 20000 );
+  }, 20000 );
 
   $('#header_nav').data('size','big');
 
