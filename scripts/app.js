@@ -1,4 +1,12 @@
 $(function(){
+
+  setTimeout( function() {
+    $( '#pencil-2' ).trigger( 'click' ) ;
+    $( '#pencil-3' ).trigger( 'click' ).delay(3000);
+    $( '#pencil-4' ).trigger( 'click' ).delay(6000);
+    $( '#pencil-1' ).trigger( 'click' ).delay(9000);
+    }, 12000 );
+
   $('#header_nav').data('size','big');
 
   $(".pencil").mouseover(function() {
