@@ -1,38 +1,35 @@
 $(function(){
 
+    function TimeOutTrigger(){
+        setTimeout( function() {
+            $( '#pencil-2' ).trigger( 'click' );
+        }, 10000 );
+        setTimeout( function() {
+            $( '#pencil-3' ).trigger( 'click' );
+        }, 20000 );
+        setTimeout( function() {
+            $( '#pencil-4' ).trigger( 'click' );
+        }, 30000 );
+        setTimeout( function() {
+            $( '#pencil-1' ).trigger( 'click' );
+        }, 40000 );
+    };
 
-  setTimeout( function() {
-    $( '#pencil-2' ).trigger( 'click' );
-    }, 5000 );
-  setTimeout( function() {
-    $( '#pencil-3' ).trigger( 'click' );
-    }, 10000 );
-  setTimeout( function() {
-    $( '#pencil-4' ).trigger( 'click' );
-    }, 15000 );
-  setTimeout( function() {
-    $( '#pencil-1' ).trigger( 'click' );
-    }, 20000 );
+  function IntervalTrigger(){
+      setInterval( function() {
+        TimeOutTrigger()
+    }, 40000 );
+  };
 
-  setInterval( function() {
-      setTimeout( function() {
-        $( '#pencil-2' ).trigger( 'click' );
-    }, 5000 );
-      setTimeout( function() {
-        $( '#pencil-3' ).trigger( 'click' );
-    }, 10000 );
-      setTimeout( function() {
-        $( '#pencil-4' ).trigger( 'click' );
-    }, 15000 );
-      setTimeout( function() {
-        $( '#pencil-1' ).trigger( 'click' );
-    }, 20000 );
-  }, 20000 );
+  TimeOutTrigger();
+  IntervalTrigger();
 
   $('#header_nav').data('size','big');
 
   $(".pencil").mouseover(function() {
+    console.log('aksdf');
     $(".pencil").addClass("hovering");
+    autoslide = false;
   })
   $(".pencil").mouseout(function() {
     $(".pencil").removeClass("hovering");
