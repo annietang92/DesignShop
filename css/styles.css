@@ -20,6 +20,10 @@ h1.larger, h1>.larger{
 	font-size: 50px !important;
 }
 
+p.larger{
+	font-size: 16px !important;
+}
+
 .panel-footer.experts{
 	min-height:150px;
 	max-height:150px;
@@ -215,6 +219,9 @@ h4.larger{
 	width:100% !important;
 }
 
+.sm-padding{
+	padding:15px;
+}
 .md-padding{
 	padding:30px;
 }
