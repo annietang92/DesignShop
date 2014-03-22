@@ -20,6 +20,22 @@ h1.larger, h1>.larger{
 	font-size: 50px !important;
 }
 
+.panel-footer.experts{
+	min-height:150px;
+	max-height:150px;
+	width: auto;
+	overflow: hidden;
+	-webkit-transition: max-height .6s ease-in-out;
+       -moz-transition: max-height .6s ease-in-out;
+         -o-transition: max-height .6s ease-in-out;
+            transition: max-height .6s ease-in-out;
+}
+
+.panel-footer.experts:hover{
+	z-index: 2000;
+	max-height:700px;
+}
+
 .text-white{
 	color:white;
 }

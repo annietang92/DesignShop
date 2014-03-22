@@ -1,25 +1,38 @@
 $(function(){
+    var t1;
+    var t2;
+    var t3;
+    var t4;
+    var interval;
 
     function TimeOutTrigger(){
-        setTimeout( function() {
+        t1 = setTimeout( function() {
             $( '#pencil-2' ).trigger( 'click' );
         }, 10000 );
-        setTimeout( function() {
+        t2 = setTimeout( function() {
             $( '#pencil-3' ).trigger( 'click' );
         }, 20000 );
-        setTimeout( function() {
+        t3 = setTimeout( function() {
             $( '#pencil-4' ).trigger( 'click' );
         }, 30000 );
-        setTimeout( function() {
+        t4 = setTimeout( function() {
             $( '#pencil-1' ).trigger( 'click' );
         }, 40000 );
     };
 
   function IntervalTrigger(){
-      setInterval( function() {
+        interval = setInterval( function() {
         TimeOutTrigger()
     }, 40000 );
   };
+
+  function stopCount(){
+    clearTimeout(t1);
+    clearTimeout(t2);
+    clearTimeout(t3);
+    clearTimeout(t4);
+    clearInterval(interval);
+  }
 
   TimeOutTrigger();
   IntervalTrigger();
@@ -29,10 +42,12 @@ $(function(){
   $(".pencil").mouseover(function() {
     console.log('aksdf');
     $(".pencil").addClass("hovering");
-    autoslide = false;
+    stopCount();
   })
   $(".pencil").mouseout(function() {
     $(".pencil").removeClass("hovering");
+    TimeOutTrigger();
+    IntervalTrigger();
   })
 
   $( "#pencil-1" ).click(function() {
