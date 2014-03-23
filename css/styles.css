@@ -101,10 +101,10 @@ p.larger{
 }
 
 .list-group-item.animation{
-	-webkit-transition: max-height .4s, background-color .1s ease-in-out;
-       -moz-transition: max-height .4s, background-color .1s ease-in-out;
-         -o-transition: max-height .4s, background-color .1s ease-in-out;
-            transition: max-height .4s, background-color .1s ease-in-out;
+	-webkit-transition: max-height .4s ease-in-out;
+       -moz-transition: max-height .4s ease-in-out;
+         -o-transition: max-height .4s ease-in-out;
+            transition: max-height .4s ease-in-out;
 }
 
 .list-group-item.collapse{
