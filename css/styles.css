@@ -244,6 +244,14 @@ h4.larger{
 	width:100% !important;
 }
 
+.topic_description{
+	min-height:700px;
+}
+
+.xs-padding{
+	padding:8px;
+}
+
 .sm-padding{
 	padding:15px;
 }
