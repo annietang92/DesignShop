@@ -35,6 +35,10 @@ p.larger{
             transition: max-height .6s ease-in-out;
 }
 
+.no-padding{
+	padding: 0 !important;
+}
+
 .panel-footer.experts:hover{
 	z-index: 2000;
 	max-height:1000px;

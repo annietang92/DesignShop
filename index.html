@@ -3,6 +3,7 @@
 <head>
   <title>DesignShop</title>
   <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
   <link rel="stylesheet" href="css/animate.css" type="text/css" />
   <link rel="stylesheet" href="css/styles.css" type="text/css" />
@@ -53,7 +54,7 @@
     <div class="chalkboard_content col-xs-12 text-center">
       <div id="slide-1" class="slide animated fadeIn">
        <a href="about.html"><h1 class="text-white">what is a <span class="larger">DesignShop</span>?</h1></a>
-        <img src="images/slide-1.png" class="md-padding img-responsive">
+       <img src="images/slide-1.png" class="md-padding img-responsive">
      </div>
      <div id="slide-2" class="slide animated fadeIn hide">
       <a href="program.html"><h1 class="text-white">when & where will it <span class="larger">Be</span>?</h1></a>
@@ -103,8 +104,25 @@
       <div class="row">
         <div class="col-lg-6 sm-padding">
           <!--VIDEO-->
-          <img src="images/video_trailer.jpg" class="img-responsive">
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AWFm2p2y0CM?rel=0" frameborder="0" allowfullscreen></iframe> -->
+          <button class="btn no-border no-padding" data-toggle="modal" data-target="#myModal">
+            <img src="images/video_trailer.jpg" class="img-responsive">
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">MIT Education DesignShop Trailer</h4>
+                </div>
+                <div class="modal-body text-center">
+                  <iframe width="540" height="315" src="https://www.youtube.com/embed/fX8Vp-XwTLQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="col-lg-6">
           <h4 class="half-spacing">
@@ -120,11 +138,11 @@
 </div>
 
 <div class="row">
-<div class="footer">
-  <div class="col-lg-12 bg-success lter md-padding text-center">
-    <strong>Site Illustration, Design and Development by <a href="https://annietang.mit.edu" class="text-white">Annie Tang</a></strong>
-  </div>
-</div><!--/footer-->
+  <div class="footer">
+    <div class="col-lg-12 bg-success lter md-padding text-center">
+      <strong>Site Illustration, Design and Development by <a href="https://annietang.mit.edu" class="text-white">Annie Tang</a></strong>
+    </div>
+  </div><!--/footer-->
 </div><!--/row-->
 </body>
 </html>
