@@ -61,7 +61,8 @@ p.larger{
     margin: 0 auto;
 }
 
-.list-group>a{
+.faq_show{
+	cursor: pointer;
 	font-weight: bold !important;
 	font-size: 16px !important;
 }
@@ -97,6 +98,25 @@ p.larger{
 	width:260px;
 	height:100%;
 	margin:0 auto;
+}
+
+.list-group-item.animation{
+	-webkit-transition: max-height .4s, background-color .1s ease-in-out;
+       -moz-transition: max-height .4s, background-color .1s ease-in-out;
+         -o-transition: max-height .4s, background-color .1s ease-in-out;
+            transition: max-height .4s, background-color .1s ease-in-out;
+}
+
+.list-group-item.collapse{
+	max-height: 0;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.list-group-item{
+	max-height: 500px;
 }
 
 .pencil{
@@ -237,6 +257,10 @@ h4.larger{
 
 .md-padding-left{
 	padding-left:30px;
+}
+
+.sm-padding-right{
+	padding-right:15px;
 }
 
 .lg-padding{

@@ -50,6 +50,21 @@ $(function(){
     IntervalTrigger();
   })
 
+  $( ".faq_show" ).click(function() {
+    $(".list-group-item").addClass("animation");
+    if ($(this).hasClass("active")){
+        $(this).removeClass("active");
+        $(this).next().addClass("collapse");
+        $(this).children(":last").removeClass("fa-chevron-up");
+        $(this).children(":last").addClass("fa-chevron-down");
+    } else{
+        $(this).addClass("active");
+        $(this).next().removeClass("collapse");
+        $(this).children(":last").addClass("fa-chevron-up");
+        $(this).children(":last").removeClass("fa-chevron-down");
+    }
+  });
+
   $( "#pencil-1" ).click(function() {
     $("#slide-1").removeClass("hide");
     $("#slide-2").addClass("hide");
