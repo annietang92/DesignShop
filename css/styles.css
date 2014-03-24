@@ -275,6 +275,10 @@ h4.larger{
 	background-image: 
 }
 
+.md-padding-top{
+	padding-top:30px;
+}
+
 .md-padding-left{
 	padding-left:30px;
 }
@@ -282,6 +286,11 @@ h4.larger{
 .md-padding-left{
 	padding-left:30px;
 }
+
+.sm-padding-top{
+	padding-top:15px;
+}
+
 .sm-margin-left{
 	margin-left:15px;
 }
@@ -338,12 +347,32 @@ h4.larger{
 	vertical-align: middle;
 }
 
-@media (max-width: 767px) {
+.btn.transparent{
+	background-color: rgba(0,0,0,0);
+	border: none;
+}
+
+.nav-btn-toggle{
+  	display: none;
+}
+
+@media (max-width: 1170px) {
   #logo_text{
   	display:none;
   }
   .slide>img{
   	height:100%;
   	max-width:1200px !important;
+  }
+  #nav_text>ul{
+  	background-color:white;
+  	padding:0;
+  	margin:0;
+  }
+  #nav_text>ul>li{
+  	border-top:1px solid #eee;
+  }
+  .nav-btn-toggle{
+  	display: block;
   }
 }

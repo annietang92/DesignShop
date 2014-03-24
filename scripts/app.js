@@ -37,6 +37,10 @@ $(function(){
   TimeOutTrigger();
   IntervalTrigger();
 
+  if ($(window).width() < 1170) {
+    $('#nav_text').addClass('hide');
+  }
+
   $('#header_nav').data('size','big');
 
   $(".pencil").mouseover(function() {
@@ -108,6 +112,16 @@ $(function(){
     $("#pencil-3").removeClass("active");
     $("#pencil-1").removeClass("active");
   });
+
+  $(".nav_btn").click(function(){
+        if ($('#nav_text').hasClass('hide')){
+            $('#nav_text').removeClass('hide');
+        }else{
+            $('#nav_text').addClass('hide');
+        }
+  });
+
+
 
 });
 
