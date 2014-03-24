@@ -337,3 +337,13 @@ h4.larger{
 	height:300px;
 	vertical-align: middle;
 }
+
+@media (max-width: 767px) {
+  #logo_text{
+  	display:none;
+  }
+  .slide>img{
+  	height:100%;
+  	max-width:1200px !important;
+  }
+}
