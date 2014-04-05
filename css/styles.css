@@ -24,15 +24,16 @@ p.larger{
 	font-size: 16px !important;
 }
 
+.panel {
+  position: relative;
+}
+
 .panel-footer.experts{
 	min-height:150px;
 	max-height:150px;
 	width: auto;
 	overflow: hidden;
-	-webkit-transition: max-height .6s ease-in-out;
-       -moz-transition: max-height .6s ease-in-out;
-         -o-transition: max-height .6s ease-in-out;
-            transition: max-height .6s ease-in-out;
+  border: 1px solid #FFF;
 }
 
 .no-padding{
@@ -40,8 +41,13 @@ p.larger{
 }
 
 .panel-footer.experts:hover{
-	z-index: 2000;
+	z-index: 1000;
 	max-height:1000px;
+	position: absolute;
+	-webkit-transition: max-height .6s ease-in-out .2s;
+       -moz-transition: max-height .6s ease-in-out .2s;
+         -o-transition: max-height .6s ease-in-out .2s;
+            transition: max-height .6s ease-in-out .2s;
 }
 
 .text-white{
