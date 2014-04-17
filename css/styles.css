@@ -99,6 +99,7 @@ p.larger{
 .chalkboard_content{
 	height:420px;
 }
+
 .chalkboard_pushdown{
 	height:420px;
 	pointer-events:none;
@@ -381,4 +382,6 @@ h4.larger{
   .nav-btn-toggle{
   	display: block;
   }
+  .panel-footer.experts{
+	max-height:1500px;
 }

@@ -126,7 +126,7 @@ $(function(){
 });
 
 $(window).scroll(function(){
-    if($(document).scrollTop() > 0)
+    if($(document).scrollTop() > 0 && $(window).width() > 1170)
     {
         if($('#header_nav').data('size') == 'big')
         {
@@ -158,7 +158,7 @@ $(window).scroll(function(){
             $('#nav_text').css("padding-top","11px");
         }  
     }
-    if($(window).scrollTop() > 150)
+    if($(window).scrollTop() > 150 && $(window).width() > 1170)
     {
         $('.chalkboard_content').stop().animate({opacity:'0.3'},50);
     }
