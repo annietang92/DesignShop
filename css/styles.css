@@ -159,6 +159,14 @@ nav{
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+nav.day-of{
+  background-color: #39b3d7 !important;
+}
+
+a.day-of-nav{
+  background-color: transparent !important;
+}
+
 #nav_text{
 	padding-top: 11px;
 }
@@ -361,6 +369,14 @@ h4.larger{
 
 .nav-btn-toggle{
   	display: none;
+}
+
+.content{
+  min-height:700px !important;
+}
+
+.border-bottom{
+  border-bottom: 1px dashed #ccc;
 }
 
 @media (max-width: 1170px) {
