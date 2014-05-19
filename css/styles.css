@@ -411,4 +411,9 @@ h4.larger{
   .panel-footer.experts{
 	max-height:1500px;
   }
+  .gallery-column{
+    width: calc(100% - 20px);
+    float:left;
+    margin:10px;
+  }
 }
